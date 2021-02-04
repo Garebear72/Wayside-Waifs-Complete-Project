@@ -1,0 +1,175 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif, 'Times New Roman', Times, serif;
+    z-index: 5;
+    background-color: #EBEAE6;
+}
+
+.lightmode {
+    background-color: #EBEAE6;
+}
+
+.darkmode {
+    background-color: #343A40;
+}
+
+.bg-waifs {
+    background-color: #bb164d;
+}
+
+#logo {
+    margin-right: 10px;
+}
+
+.topofpagediv {
+    margin-top: 5px;
+}
+
+.waifs {
+    color: #bb164d;
+    font-style: italic;
+    font-size: 48px;
+    font-family: 'Pacifico', cursive, 'Noto Sans JP', sans-serif, 'Times New Roman', Times, serif;
+}
+
+.waifssmallgreen {
+    color: #53AFA5;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.waifssmallred {
+    color: #bb164d;
+    font-style: italic;
+    font-size: 32px;
+}
+
+.dropdown-item:hover{
+    background-color: #bb164d !important;
+}
+
+.darkmode-hover:hover{
+    background-color: #581919 !important;
+}
+
+.thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+
+.background1 {
+    background-color: #C0B695;
+}
+
+.background1dark {
+    background-color: #2c2a22;
+}
+
+.background2 {
+    background-color: #a1d4ce;
+}
+
+.background2dark {
+    background-color: #1e3d3a;
+}
+
+.normalmargpad {
+    padding: 10px 10px 0px 10px;
+}
+
+.imgpadding {
+    padding: 10px 2px 10px 0px;
+}
+
+/* THE SIZE OF THE MAIN CONTAINER FOR EACH MAIN PAGE */
+.container {
+    max-width: 1400px;
+    width: 100%;
+}
+
+.listitempersonalized {
+    font-size: 20px;
+    line-height: 1;
+    margin: 5px;
+}
+
+
+/* This is to keep the nav bar centered at ALL times. I added z-index to this to keep the drop down items on top, instead of behind the carousel where they were appearing before hand */
+@media (min-width: 567px) {
+    .abs-center-x {
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 100;
+    }
+}
+
+@media (max-width: 1850px) {
+    .sidediv {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 1300px) {
+    .imghide {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+/* Space out the nav items a little more (((( :not(:last-child) is just applying the style to everything except the very last child in the nav, so we don't make things wonky )))) */
+.navbar .nav-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* Moving the arrows down of the navbar when they are hovered over */
+.show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
+}
+
+/* Apply a little "life" to the navbar items I'm hovering over, making the arrows flow downward over the course of .15 seconds */
+.dropdown-toggle::after {
+    transition: transform 0.15s linear; 
+}
+
+ /* I changed the margin of the dropdown menu so that I could hover over it and access the content below without resetting everything (because there was a bit of space there) */
+.dropdown-menu {
+    margin-top: 0;
+}
+
+.adoption-price {
+    background-color: #ebe5d4;
+    margin: 50px;
+    padding: 60px;
+    border-radius: 25% !important;
+}
+
+.img-fluid {
+    border-radius: 10% !important;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.sidediv {
+    margin-top: 65px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.active {
+    background-color: #bb164d !important;
+}
+
+.whitebox {
+    background-color:  #f7f1f1;
+    border: 1px solid black;
+}

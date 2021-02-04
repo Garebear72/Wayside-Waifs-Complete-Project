@@ -1,0 +1,263 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+
+    <!-- jQuery Link-->
+    <script src="js/jquery-3.5.1.js"></script>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+
+    <!-- Everything Else -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Wayside Waifs</title>
+
+    <!-- Style for the bullet points on this page alone. Didn't want to make an entire style sheet just for this -->
+    <style>
+            .sampleClass ul {list-style: none; /* Remove default bullets */}
+
+            .sampleClass ul li::before {
+                content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                color: #bb164d; /* Change the color */
+                font-weight: bold; /* If you want it to be bold */
+                display: inline-block; /* Needed to add space between the bullet and the text */
+                width: 1em; /* Also needed for space (tweak if needed) */
+                margin-left: -1em; /* Also needed for space (tweak if needed) */
+            }
+    </style>
+    
+</head>
+
+<body class="lightmode">
+
+    <!-- Main Navbar -->
+    <nav class="navbar sticky-top navbar-expand-xl navbar-dark bg-waifs">
+        <img src="assets/favicon-32x32.png" id="logo"/>
+        <a class="navbar-brand" href="#">Wayside Waifs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Adopt
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="availabledogs.html">Available Dogs</a>
+                    <a class="dropdown-item" href="availablecats.html">Available Cats</a>
+                    <a class="dropdown-item" href="availableanimals.html">Available Small Animals</a>
+                    <a class="dropdown-item" href="adoptionprocess.html">Adoption Process</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Donate
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="donatenow.html">Donate Now</a>
+                        <a class="dropdown-item" href="https://secure.waysidewaifs.org/site/Donation2?df_id=5585&mfc_pref=T&5585.donation=form1">Donate Monthly</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="behaviorandtraining.html">Behavior & Training</a>
+                        <a class="dropdown-item" href="petmemorialservices.html">Pet Memorial Services</a>
+                        <a class="dropdown-item active" href="barkpark.html">Bark Park <span class="sr-only">(current)</span></a>
+                        <a class="dropdown-item" href="petsurrender.html">Pet Surrender</a>
+                        <a class="dropdown-item" href="vetclinic.html">Vet Clinic</a>
+                        <a class="dropdown-item" href="whiskersandwags.html">Whiskers and Wags</a>
+                        <a class="dropdown-item" href="animalrescue.html">Animal Rescue</a>
+                        <a class="dropdown-item" href="humaneeducation.html">Humane Education</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="becomeavolunteer.html">Become a Volunteer</a>
+                </li>
+            </ul>
+
+            <!-- Night Mode Button -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" id="nightmode" href="#"><img id="moonman" src="assets/moon.png" width="20px" height="20px" /></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- First Panel of Info -->
+    <div class="container background1" style="margin-top: 10px;">
+        <div class="row" style="padding: 25px 10px 25px 10px; line-height: 2;">
+            <div class="col-md-6" style="padding: 50px;">
+                <h1 class="waifs">The Bark Park...</h1>
+                <hr style="background-color: rgb(231, 97, 97); margin: 35px 0px 35px 0px;">
+                <h4><b><span class="needslighttext">It's a Dog's Life</span></b></h4>
+                <p><span class="needslighttext">In 2003, Wayside was thrilled to open the new Wayside Waifs Bark Park, given and dedicated by the Harold and Marilyn Melcher family. And what a great park it is for an off-leash romp with your canine friends! We hope you and your dog find the park to be a great outlet for fun, socialization and bonding. Our goal is to create the safest dog park in the metropolitan area.</span></p>
+            </div>
+
+            <div class="col-md-6">
+                <img style="padding-top: 25px; border-radius: 0% !important;" class="img-fluid" src="assets/barkpark1.jpg"/>
+            </div>
+        </div>
+        
+        <div class="row" style="padding: 0px 10px 25px 10px; line-height: 2;">
+            <div class="col-md-6" style="padding: 50px;">
+                <h4><b><span class="needslighttext">The Courtesy Comfort Station</span></b></h4>
+                <p><span class="needslighttext">The Courtesy Comfort Station - a one-of-a-kind amenity added to the Bark Park 2016 - was funded 100% by The Harold and Marilyn Melcher Foundation. The vision for the Courtesy Comfort Station was to create a unique, friendly and comfortable space for Bark Park patrons as well as Wayside Waifs volunteers to walk and social dogs on campus.</span></p>
+            </div>
+
+            <div class="col-md-6">
+                <img class="img-fluid" style="border-radius: 0% !important;" src="assets/barkpark2.jpg"/>
+            </div>
+        </div>
+    </div>
+    <div class="sampleClass">
+    <!-- 1st Features of Park ETC -->
+    <div class="container background2" style="margin-top: 10px; padding-top: 15px;">
+        <div class="row" style="line-height: 2.3;">
+            <div class="col-md-6" style="padding: 15px; font-size: 15px;">
+                <h3 style="padding-left: 20px;"><b><span class="needslighttext">Features of the Park</span></b></h3>
+                <ul class="needslighttext">
+                    <li>Five acres of fenced-in grass-covered off-leash fun.</li>
+                    <li>Separate enclosed area for small dogs</li>
+                    <li>Trees and shaded areas</li>
+                    <li>Covered pavilions and park benches</li>
+                    <li>“Time-out Kennels” for dogs who may become overly excited or exhausted by their play. The kennels are also handy if you bring two dogs and want to “park” one while doing training work with the other.</li>
+                    <li>Watering stations located throughout the park</li>
+                    <li>Lots of open space for those Frisbee addicts</li>
+                    <li>Ample lighted parking near the park entrance</li>
+                    <li><b>Membership fees directly support Wayside Waifs' homeless pets</b></li>
+                </ul>
+                <h3 style="padding-left: 20px;" class="needslighttext"><b>Features of the Courtesy Comfort Station</b></h3>
+                <ul class="needslighttext">
+                    <li>Main entry doors are open 8 am - 5pm and accessible by key card after hours (open 24 hours a day; 7 days a week; 365 days a year)</li>
+                    <li>Double-gated entry</li>
+                    <li>A heated and air conditioned space for you to warm up or cool off during your visit</li>
+                    <li>A men's and women's spacious restroom (with tie down hooks for your dog's leash)</li>
+                    <li>A soft drink machine and water fountain</li>
+                    <li>Indoor benches to sit down and relax</li>
+                    <li>An outdoor patio area with tables and seating (fenced in so your dog can also be off-leash)</li>
+                    <li>A Paw Wash area for dirty paws (open in the spring)</li>
+                    <li>Lights to illuminate the area after dark (the park is never dark)</li>
+                </ul>
+            </div>
+            <div class="col-md-6" style="padding: 15px; line-height: 2.3; font-size: 15px;">
+                <h3 class="needslighttext"><b>Membership Fees</b></h3>
+                <p class="needslighttext">The Bark Park is open for members only and requires a card for entry. This further guarantees the security of the Bark Park, and all proceeds go to support Wayside’s shelter operations.</p>
+                <table class="table whitebox">
+                    <tbody>
+                      <tr>
+                        <th scope="row">Annual Membership</th>
+                        <td>$120</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Monthly Membership</th>
+                        <td>$20</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">One-Time Daily Visit</th>
+                        <td>$3</td>
+                      </tr>
+                    </tbody>
+                </table>
+                <h3 class="needslighttext"><b>Get Started Today</b></h3>
+                <ol style="font-weight: bold;" class="needslighttext">
+                    <li><span style="font-weight: normal;">Print and sign the <a href="assets/BarkParkReg_17.pdf">Registration Form.</a></span></li>
+                    <li><span style="font-weight: normal;">Print and sign the <a href="assets/Waiver_and_Release_-_FINAL.pdf">Waiver of Liability.</a></span></li>
+                    <li><span style="font-weight: normal;">Bring both forms and current vaccine records to Wayside Waifs' front desk during business hours.</span></li>
+                    <li><span style="font-weight: normal;">If you have questions or concerns about the Bark Park, <a href="mailto:cemetery@waysidewaifs.org">email</a> or call us at 816-761-8151</span></li>
+                </ol>
+            </div>
+        </div>
+
+        <hr style="background-color: red; margin: 35px 0px 35px 0px;">
+
+        <div class="row" style="line-height: 2.5;">
+            <div class="col-md-12">
+                <h3 style="padding-left: 20px;" class="needslighttext"><b>Park Rules</b></h3>
+                <p style="padding-left: 20px;" class="needslighttext">There are some inherent risks of personal injury, property damage and even death associated with visiting an off-leash dog park.<br><b>As a member of the Bark Park, you agree to abide by the following rules:</b></p>
+                <ol style="font-weight: bold;" class="needslighttext">
+                    <li><span style="font-weight: normal;">Only members of the park and their guests may use the park. Members must accompany guests at all times.</span></li>
+                    <li><span style="font-weight: normal;">Dogs must wear a collar with proper I.D. and a license at all times.</span></li>
+                    <li><span style="font-weight: normal;">Children under age 16 must be accompanied by a parent or guardian. Parents and guardians are responsible for the safety of their children.</span></li>
+                    <li><span style="font-weight: normal;">Limit of 2 dogs per adult visitor.</span></li>
+                    <li><span style="font-weight: normal;">The large dog park is for dogs 30 pounds and up. All dogs under 30 pounds must use the small dog park.</span></li>
+                    <li><span style="font-weight: normal;">If you don't know how your dog will interact with other dogs, please do not bring him/her to the dog park.</span></li>
+                    <li><span style="font-weight: normal;">Wolves or wolf hybrids are prohibited.</li>
+                    <li><span style="font-weight: normal;">Dogs with a history of aggression, those who have injured other animals, or are known to initiate fights are prohibited.</span></li>
+                    <li><span style="font-weight: normal;">Should your dog be reported as showing aggressive behaviors or causing harm to another dog, your dog park privileges will be suspended.</span></li>
+                    <li><span style="font-weight: normal;">Dogs must be leashed from the owner's vehicle to the park, and upon leaving the park. However, please unleash your dog once inside the safety entrance gate and before proceeding through the main gate leading into the park.</span></li>
+                    <li><span style="font-weight: normal;">Unaltered (not spayed or neutered) dogs are not allowed in the park.</span></li>
+                    <li><span style="font-weight: normal;">Pinch, choke and prong collars are not allowed.</span></li>
+                    <li><span style="font-weight: normal;">Leaving dogs unattended is prohibited.</span></li>
+                    <li><span style="font-weight: normal;">Owners must maintain verbal and physical control of their dogs at all times.</span></li>
+                    <li><span style="font-weight: normal;">Do not bring human food into the park, including alcoholic beverages. Rawhide bones, treats, smoking and glass containers are also prohibited.</span></li>
+                    <li><span style="font-weight: normal;">State law requires all dogs must be currently vaccinated for rabies and Bark Park rules suggest vaccination for Bordetella and Distemper (DHPP, DA2PP or DHLPP).</span></li>
+                    <li><span style="font-weight: normal;">Puppies under five months of age are not allowed.</span></li>
+                    <li><span style="font-weight: normal;">Owners must clean up after their dogs. Plastic bags are provided for the disposal of waste.</span></li>
+                </ol>
+                <p class="text-center needslighttext" style="padding-left: 20px; font-weight: bolder; font-size: large;">Failure to abide by the park rules may result in the loss of privileges, or owners may be ticketed by Animal Control.</p>
+            </div>
+        </div> 
+    </div>
+    </div>
+
+        <!-- CONTACT US PORTION -->
+        <div class="container background1 text-center" style="margin-bottom: 10px; margin-top: 10px; padding: 15px">
+                <h4 class="waifssmallred">Come Find Us!</h4>
+                <p><span class="needslighttext" style="font-size: 16px;">Conveniently located in south Kansas City, our newly expanded campus sits on more than 50 beautiful acres.<br>Featuring a Pet Adoption center, Animal Rescue facility, Bark Park, Behavior & Training facility, Vet Clinic and Pet Memorial Services, Wayside Waifs is more than 50,000 square feet in size.</span></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.695279825251!2d-94.54940088376742!3d38.90808307956905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0e7f206ea831f%3A0x876f9b7e6360ccae!2sWayside%20Waifs!5e0!3m2!1sen!2sus!4v1597773596751!5m2!1sen!2sus" width="1000" height="400" frameborder="1" style="border:1;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+                <hr style="background-color: #bb164d;">
+                
+                <h4 class="waifssmallred">Get In Contact Instead!</h4>
+                <p><span class="needslighttext" style="font-size: 16px;"> 
+                    Wayside Waifs Humane Society<br>
+                    3901 Martha Truman Road<br>
+                    Kansas City, MO 64137<br>
+                    816-761-8151</span></p>
+                <img style="padding-bottom: 10px;" src="assets/contact_images.jpg"/>
+                <br>
+                <a href="https://twitter.com/waysidewaifs?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @waysidewaifs</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                
+        </div>
+
+    </div>
+    
+    <!-- Personal JavaScript / jQuery -->
+    <script src="js/autodropdown.js"></script>
+    <script src="js/initializetooltips.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/titlereplace.js"></script>
+    <script src="js/closefooter.js"></script>
+    <script src="js/dayoftheweek.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
